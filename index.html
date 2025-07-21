@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>LR-SOLUTION</title>
+
+    </div>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    </a>
+
+
+    <style>
+        #inicio {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+
+
+
+        #navInicial {
+            max-width: 100vw;
+            min-width: 75%;
+            padding-right: 0%;
+        }
+
+        #cabecalho {
+            font-family: 'Handlee', cursive;
+            font-size: 2.9rem;
+            color: black;
+        }
+
+        #imgBanner {
+            width: 100%;
+            height: 30%;
+        }
+
+        #mid {
+            padding: 0%;
+        }
+
+        #p1 {
+            font-family: 'Handlee', cursive;
+            font-size: 1.0rem;
+            color: black;
+        }
+
+        #p2 {
+            font-style: oblique;
+        }
+
+        #imgServ {
+            width: 20%;
+            height: 20%;
+        }
+
+        #entCon {
+            height: 10%;
+            padding: 0.5px;
+            overflow: hidden;
+
+        }
+
+        #p3 {
+            font-family: 'Handlee', cursive;
+            font-size: 2.5rem;
+        }
+
+        #pClientes {}
+
+        #rodape {
+            height: 1%;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 0%;
+            background-color: white;
+            color: black;
+
+        }
+
+        :root {
+            --icon-color: #fff;
+            --icon-hover: #fff;
+            --background-color: #00c800;
+            --background-hover: #009600
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            transform: scale(0.6) translate(20%, 20%);
+            fill: var(--icon-color)
+        }
+
+        .float {
+            position: fixed;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            transition: 1s;
+            background-color: var(--background-color);
+            border-radius: 50px;
+            animation: pulse 3s infinite;
+            -webkit-animation: pulse 3s infinite;
+            -moz-animation: pulse 3s infinite;
+            -o-animation: pulse 3s infinite;
+            z-index: 9000
+        }
+
+        .float:hover {
+            background-color: var(--background-hover)
+        }
+
+        .float:hover .icon {
+            fill: var(--icon-hover)
+        }
+
+        @-webkit-keyframes pulse {
+            0% {
+                -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1)
+            }
+
+            70% {
+                -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0)
+            }
+
+            100% {
+                -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0)
+            }
+        }
+
+        @-o-keyframes pulse {
+            0% {
+                -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1)
+            }
+
+            70% {
+                -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0)
+            }
+
+            100% {
+                -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0)
+            }
+        }
+
+        @-ms-keyframes pulse {
+            0% {
+                -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1)
+            }
+
+            70% {
+                -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0)
+            }
+
+            100% {
+                -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0)
+            }
+        }
+
+        @-moz-keyframes pulse {
+            0% {
+                -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1)
+            }
+
+            70% {
+                -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0)
+            }
+
+            100% {
+                -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0)
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1)
+            }
+
+            70% {
+                -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0)
+            }
+
+            100% {
+                -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0)
+            }
+        }
+    </style>
+
+</head>
+
+
+
+<body id="inicio">
+   
+  <nav class="navbar fixed-top navbar-expand-lg navbar-fixed-top  bg-dark   text-black" id="navInicial">
+     <div class="container">
+            <div class="col-sm-3" id="cabecalho">
+                <img src="img/iconPngTop.png" width="20%" height="20%" alt="" class="rounded-circle">
+                <a class="navbar-brand h1 mb-0 text-white" href="#">LR Solution</a>
+            </div>
+
+
+
+            <div class="pos-f-t">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                        <h5 class="text-white h4">Collapsed content</h5>
+                        <span class="text-muted">Toggleable via the navbar brand.</span>
+                    </div>
+                </div>
+                <nav class="navbar navbar-dark bg-dark">
+                    <button class="navbar-toggler collapsed"  type="button" data-toggle="collapse" data-target="#navbarSite">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse " id="navbarSite">
+
+                        <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#inicio">Início</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicos">Serviços</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contatos</a>
+                            </li>
+                        </ul>
+
+
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href=""><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href=""><i class="fab fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+              </div>
+         </div>
+     </div> 
+</nav>
+
+
+
+    <div class="fixed-top  float-left">
+        <a href="https://wa.me/5511988774786?text=Olá!%20Encontrei%20seu%20site%20na%20Internet%20e%20preciso%20de%20seus%20serviços"
+            class="float" aria-label="Botão para contato no WhatsApp" target="_blank">
+            <svg class="icon">
+                <path
+                    d="M.33,48.33,3.06,35.62A23.67,23.67,0,0,1,0,24,24.06,24.06,0,0,1,24.12,0h0a23.95,23.95,0,1,1,0,47.89,24.33,24.33,0,0,1-11-2.61ZM13.7,41.08l.67.36a20.3,20.3,0,0,0,9.74,2.49A20,20,0,1,0,4,24a19.78,19.78,0,0,0,2.89,10.3l.41.68L5.52,43Z" />
+                <path
+                    d="M34.67,31.75C34.22,33,32,34.21,31,34.31S30,35.12,24.5,33s-9-7.77-9.27-8.13S13,21.92,13,19.27a6.08,6.08,0,0,1,1.89-4.5,2,2,0,0,1,1.45-.67c.36,0,.72.05,1,.05s.77-.18,1.22.9,1.54,3.72,1.67,4a1,1,0,0,1,.05.95,3.53,3.53,0,0,1-.54.89c-.28.32-.58.71-.82.95s-.55.56-.24,1.09a16.48,16.48,0,0,0,3,3.73,14.93,14.93,0,0,0,4.37,2.68c.54.26.86.22,1.17-.14s1.36-1.58,1.72-2.12.72-.45,1.22-.26,3.17,1.47,3.71,1.74.9.41,1,.63A4.4,4.4,0,0,1,34.67,31.75Z" />
+            </svg>
+        </a>
+
+    </div>
+
+    </div>
+    <!--TESTE menu amburger-->
+
+
+    <!---->
+
+
+
+    <div class="" id="imgBanner">
+        <img src="img/3.jpg" alt="" width="100%" height="30%">
+
+    </div>
+
+
+
+
+    <div class=" bg-dark text-white">
+        <div class="row">
+            <div class="col-12 text-center my-1">
+                <h3 class="text-white"><strong>Prestação de Serviços e Consultoria </br>Em Tecnologia da Informação
+                </h3></strong>
+                <p class="text-white" id="p1">Utilize a tecnologia para maximizar a performance da sua empresa como um
+                    todo .
+                </p>
+            </div>
+        </div>
+    </div class="container-expand-lg">
+    <div></div>
+    <div class="row mb-1 js  justify-content-sm-center" id="mid">
+        <div class="col-sm-6 col-md-3  my-1">
+            <img src="img/home.png" class="img-fluid d-block">
+        </div>
+
+        <div class="col-sm-6 col-md-5   my-5 mb-1 ">
+            <h5 class="text-dark " id="p2">
+                A tecnologia da informação tem um papel fundamental no dia a dia das organizações,
+                é peça-chave para o seu sucesso, seja para apoiar a realizações de tarefas e de seus
+                colaboradores ou para otimizar e automatizar processos, é preciso contar com soluções
+                adequadas e as vezes em pleno funcionamento.
+            </h5>
+
+        </div>
+    </div>
+    </div>
+
+    <!---->
+    <div class="container-expand-lg bg-dark my-5 ">
+        <div class=row id="servicos">
+            <div class="col-12 text-center ">
+                <h1 class="display-4 text-center text-white"><i class="fa fa-cogs text-white"
+                        aria-hidden="true"></i>Serviços</h1>
+            </div>
+
+            <div class="row   justify-content-sm-center">
+                <div class="col-sm-3 col-md-3 ">
+                    <div id="serv" class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" id="imgServ" src="img/suporteti2.png">
+                            <h4 class="card-title">Suporte em TI</h4>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 ">
+
+                    <div id="serv" class="card  mb-6">
+                        <div class="card-body">
+                            <img class="card-img-top" id="imgServ" src="img/DesenvolvimentoSoftware.png">
+                            <h4 class="card-title">Desenvolvimento de Sistemas</h4>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 ">
+                    <div id="serv" class="card  mb-5">
+                        <div class="card-body ">
+                            <img class="card-img-top" id="imgServ" src="img/rd1.png">
+                            <h4 class="card-title">Rede de Computadores</h4>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-expand-lg ">
+
+        <div class="row mb-5 js  justify-content-sm-center " id="entCon">
+            <div class="col-sm-6 col-md-2 my-1">
+                <img src="img/contato.png" class="img-fluid d-block">
+            </div>
+
+            <div class="col-sm-6 col-md-3 ">
+                <h4 class="my-5 text-black " id="p3">
+                    Vamos conversar sobre seu projeto ?
+                </h4>
+                <a href="#contato" class="btn btn-dark ">Entre em Contato</a>
+            </div>
+        </div>
+
+        <div class="bg-dark text-white" id="afrodape>
+            <div class=" container">
+            <div class="row">
+                <div class="col-12 text-center my-2">
+                    <h1 class="display-4 "><i class="fas fa-users"></i>Nossos Clientes</h1>
+
+                </div>
+            </div>
+
+            <div class="row " id="p1">
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="card  mb-5" id="cliente">
+                        <div class="card-body">
+                            <h4 class="card-title my-4 ">Moca</h4>
+                            <p class="subtitle mb-2 text-muted">Movimento de orientação a criança e ao adolescente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="card  mb-5" id="cliente">
+                        <div class="card-body">
+                            <h4 class="card-title my-4 ">Clinica Método</h4>
+                            <p class="subtitle mb-2 text-muted">Clinica de atendimento ortopédico e clinica geral
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="card  mb-5" id="cliente">
+                        <div class="card-body">
+                            <h4 class="card-title my-4 ">Academia Impaccto</h4>
+                            <p class="subtitle mb-2 text-muted">Academia de musculação e condicionamento físico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="card  mb-5" id="cliente">
+                        <div class="card-body">
+                            <h4 class="card-title my-4 ">TM Logistica</h4>
+                            <p class="subtitle mb-2 text-muted">Transporte de entregas expressas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="card  mb-5" id="cliente">
+                        <div class="card-body">
+                            <h4 class="card-title my-4 ">Pereira's Car</h4>
+                            <p class="subtitle mb-2 text-muted">Centro de diagnostico e reparo automotivo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="card  mb-5" id="cliente">
+                        <div class="card-body">
+                            <h4 class="card-title my-4 ">Lysandre Modas</h4>
+                            <p class="subtitle mb-2 text-muted"> Fabrica e loja de moda evangelica</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="card  mb-5" id="cliente">
+                        <div class="card-body">
+                            <h4 class="card-title my-4 ">Centro Automotivo Irmãos Santos</h4>
+                            <p class="subtitle mb-2 text-muted">Serviços mecanica e diagnostico em geral,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="card  mb-5" id="cliente">
+                        <div class="card-body">
+                            <h4 class="card-title my-4 ">Clinica Método</h4>
+                            <p class="subtitle mb-2 text-muted">Empresa de transporte de cargas</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer id="rodape">
+        <img src="img/iconPngTop.png" alt="" class="rounded-circle">
+        <p>LR SOLUTION <br>
+
+
+            <i class="fas fa-phone-alt "></i> Telefones:(11)98818-8785<br>
+            <i class="fas fa-envelope"></i> Email: contato@lrsolution.net
+            <br>
+            <a class="btn" href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+            <a class="btn" href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+            <a class="btn" href="#"><i class="fab fa-instagram-square" aria-hidden="true"></i></a><br>
+
+            ® LR Solution 2020</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        $(function () {
+
+            $('[data-toggle="popover"]').popover()
+
+        })
+    </script>
+
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var options = {
+                whatsapp: "+5511988188785", // Número do WhatsApp
+                company_logo_url: "https://drive.google.com/file/d/1UjWcfvbC4tsi57yhtslD85L5sP1klPhJ/view?usp=sharing", // URL com o logo da empresa
+                greeting_message: "Olá! Bem vindo, como podemos ajudar!.", // Texto principal
+                call_to_action: "Entre em Contato.", // Chamada para ação
+                position: "right", // Posição do widget na página 'right' ou 'left'
+            };
+            var proto = document.location.protocol,
+                host = "whatshelp.io",
+                url = proto + "//static." + host;
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () {
+                WhWidgetSendButton.init(host, proto, options);
+            };
+            var x = document.getElementsByTagId('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+
+
+    <!--
+
+        <script type="text/javascript">
+            (function () {
+                var options = {
+                    whatsapp: "+5511988188785", // Número do WhatsApp
+                    company_logo_url: "https://drive.google.com/file/d/1UjWcfvbC4tsi57yhtslD85L5sP1klPhJ/view?usp=sharing", // URL com o logo da empresa
+                    greeting_message: "Olá! Bem vindo, como podemos ajudar!.", // Texto principal
+                    call_to_action: "Entre em Contato.", // Chamada para ação
+                    position: "right", // Posição do widget na página 'right' ou 'left'
+                };
+                var proto = document.location.protocol,
+                    host = "whatshelp.io",
+                    url = proto + "//static." + host;
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () {
+                    WhWidgetSendButton.init(host, proto, options);
+                };
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            })();
+        </script>
+
+-->
+
+</body>
+
+</html>
